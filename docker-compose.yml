@@ -35,6 +35,10 @@ services:
             - "18888:8080"
         volumes:
             - deploy:/usr/local/tomcat/webapps/
+    aem:
+        build: /Users/dima/projects/dockeraem
+        ports:
+            - "14502:4502"
     dashboard:
         build: ./dashboard
         ports:
